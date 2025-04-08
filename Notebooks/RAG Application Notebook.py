@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+ing#!/usr/bin/env python
 # coding: utf-8
 
 # ## RAG Application Notebook
@@ -18,7 +18,7 @@
 # Example of query for reading data from Kusto. Replace T with your <tablename>.
 kustoQuery = "['SurveillanceEmbeddings'] | take 10"
 # The query URI for reading the data e.g. https://<>.kusto.data.microsoft.com.
-kustoUri = "https://trd-gv4pr41wu4ft2j34bk.z9.kusto.fabric.microsoft.com"
+kustoUri = "kustoUri"
 # The database with data to be read.
 database = "RAG_EventHouse"
 # The access credentials.
@@ -60,13 +60,13 @@ from langchain.document_loaders import PyPDFLoader
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 
 OPENAI_GPT4_DEPLOYMENT_NAME="gpt-4"
-OPENAI_DEPLOYMENT_ENDPOINT="https://armelyopenai.openai.azure.com/" 
-OPENAI_API_KEY="bf960d750ff946e8a8908e7f5ed53b71"
+OPENAI_DEPLOYMENT_ENDPOINT="OPENAI_DEPLOYMENT_ENDPOINT" 
+OPENAI_API_KEY="OPENAI_API_KEY"
 OPENAI_ADA_EMBEDDING_DEPLOYMENT_NAME = "armelyembed"
 
-KUSTO_URI = "https://trd-gv4pr41wu4ft2j34bk.z9.kusto.fabric.microsoft.com"
-KUSTO_DATABASE = "RAG_EventHouse"
-KUSTO_TABLE = "SurveillanceEmbeddings"
+KUSTO_URI = "KUSTO_URI"
+KUSTO_DATABASE = "KUSTO_DATABASE"
+KUSTO_TABLE = "KUSTO_TABLE"
 accessToken = mssparkutils.credentials.getToken(KUSTO_URI)
      
 
