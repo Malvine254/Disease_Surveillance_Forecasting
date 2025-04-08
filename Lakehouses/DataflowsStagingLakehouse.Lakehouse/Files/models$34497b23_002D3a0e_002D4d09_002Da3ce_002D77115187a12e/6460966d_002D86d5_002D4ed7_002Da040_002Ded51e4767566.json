@@ -1,0 +1,19 @@
+{
+  "name": "Its going to work",
+  "culture": "en-US",
+  "version": null,
+  "modifiedTime": "2025-04-04T17:15:10.566382+00:00",
+  "entities": [],
+  "activities": [
+    {
+      "name": "mobile_health_reports_new_WriteToDataDestination",
+      "result": null,
+      "ppdf:isPipelineUsed": false
+    }
+  ],
+  "referenceModels": [],
+  "relationships": [],
+  "ppdf:sqlPrefix": "5657d061778c455b886fb59603b2b31b",
+  "ppdf:fastCopy": true,
+  "ppdf:forEach": true
+}

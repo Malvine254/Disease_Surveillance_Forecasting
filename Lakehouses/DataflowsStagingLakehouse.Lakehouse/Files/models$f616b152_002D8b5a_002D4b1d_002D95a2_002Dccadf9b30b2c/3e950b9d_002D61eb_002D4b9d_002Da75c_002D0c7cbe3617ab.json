@@ -1,0 +1,19 @@
+{
+  "name": "Dataflow 1",
+  "culture": "en-US",
+  "version": null,
+  "modifiedTime": "2025-04-01T14:41:57.7811717+00:00",
+  "entities": [],
+  "activities": [
+    {
+      "name": "mobile_health_reports_WriteToDataDestination",
+      "result": null,
+      "ppdf:isPipelineUsed": false
+    }
+  ],
+  "referenceModels": [],
+  "relationships": [],
+  "ppdf:sqlPrefix": "97c9b924063f4013bd5226006a790ef1",
+  "ppdf:fastCopy": true,
+  "ppdf:forEach": true
+}

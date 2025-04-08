@@ -1,0 +1,19 @@
+{
+  "name": "Health Facility Data Silver To Gold",
+  "culture": "en-US",
+  "version": null,
+  "modifiedTime": "2025-04-04T16:02:54.7193483+00:00",
+  "entities": [],
+  "activities": [
+    {
+      "name": "health_facility_reports_cleaned_WriteToDataDestination",
+      "result": null,
+      "ppdf:isPipelineUsed": false
+    }
+  ],
+  "referenceModels": [],
+  "relationships": [],
+  "ppdf:sqlPrefix": "313dfb461d1f4760a0c1407d47ac2c3a",
+  "ppdf:fastCopy": true,
+  "ppdf:forEach": true
+}

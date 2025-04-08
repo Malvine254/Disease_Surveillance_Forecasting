@@ -1,0 +1,10 @@
+{"commitInfo":{"timestamp":1743520381817,"operation":"WRITE","operationParameters":{"mode":"Overwrite","partitionBy":"[]"},"readVersion":0,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numFiles":"8","numOutputRows":"5000","numOutputBytes":"334496"},"engineInfo":"Apache-Spark/3.5.1.5.4.20250211.1 Delta-Lake/3.2.0.15","txnId":"22e29684-e845-42e6-ad58-8afd899e3570"}}
+{"add":{"path":"part-00000-3d3b8062-06aa-444a-a59d-1b374451a182-c000.snappy.parquet","partitionValues":{},"size":41810,"modificationTime":1743520381393,"dataChange":true,"tags":{}}}
+{"add":{"path":"part-00001-04a8e752-57a4-487d-9939-a8c0942636dd-c000.snappy.parquet","partitionValues":{},"size":41763,"modificationTime":1743520381410,"dataChange":true,"tags":{}}}
+{"add":{"path":"part-00002-81546659-3fc6-4029-a684-0d1f4a69334e-c000.snappy.parquet","partitionValues":{},"size":41956,"modificationTime":1743520381382,"dataChange":true,"tags":{}}}
+{"add":{"path":"part-00003-db2ee2a9-3aec-4f38-a8a6-8b64ed759e96-c000.snappy.parquet","partitionValues":{},"size":41932,"modificationTime":1743520381397,"dataChange":true,"tags":{}}}
+{"add":{"path":"part-00004-5e4a7fa8-8ad9-400b-92f8-71d99e17e983-c000.snappy.parquet","partitionValues":{},"size":41837,"modificationTime":1743520381403,"dataChange":true,"tags":{}}}
+{"add":{"path":"part-00005-bfda9626-68fd-4fc8-8024-6a26cbfc053c-c000.snappy.parquet","partitionValues":{},"size":41734,"modificationTime":1743520381397,"dataChange":true,"tags":{}}}
+{"add":{"path":"part-00006-6b3aa032-3fb2-4a5a-aaca-2a7c27dafe80-c000.snappy.parquet","partitionValues":{},"size":41837,"modificationTime":1743520381403,"dataChange":true,"tags":{}}}
+{"add":{"path":"part-00007-6476b227-af10-4187-ae1c-d17d16a7e8c0-c000.snappy.parquet","partitionValues":{},"size":41627,"modificationTime":1743520381393,"dataChange":true,"tags":{}}}
+{"remove":{"path":"part-00000-984e115d-abb0-4481-9770-40d5df12605f-c000.snappy.parquet","deletionTimestamp":1743520381815,"dataChange":true,"extendedFileMetadata":true,"partitionValues":{},"size":596267,"tags":{}}}
