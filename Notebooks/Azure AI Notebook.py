@@ -12,8 +12,8 @@ import requests
 import json
  
 # 🔐 Fill in your Azure OpenAI credentials
-api_key = "91ebc42e-ccbc-4edf-a1ac-2e3918d94288"  # Replace with your key
-endpoint = "https://mango-bush-0a9e12903.5.azurestaticapps.net/api/v1"  # No trailing slash!
+api_key = "your_key_here"  # Replace with your key
+endpoint = "your_endpoint_here"  # No trailing slash!
 deployment_name = "gpt-4"  #Open AI Deployment name
  
 # Full URL with API version
