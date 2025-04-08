@@ -25,6 +25,11 @@
 
 ![dtf (1)](https://github.com/user-attachments/assets/83cc36ce-f0f3-4aa8-b424-b036befb78bc)
 
+# Project Video 
+
+[![Watch the video](https://img.youtube.com/vi/-Drs5XrSfTI/maxresdefault.jpg)](https://youtu.be/-Drs5XrSfTI)
+
+
 
 ## 6. Dataset Documentation
 # Mobile Health Reports
@@ -86,12 +91,8 @@
 
 **e) Custom Agentic AI**
 
-Configured threshold-based triggers within Microsoft Fabric pipelines and Power Automate. 
-For example, when predicted case counts exceed historical norms.
-Triggered alerts via Microsoft Teams and email to notify health officials and field workers.
-Enabled decision support by integrating alert summaries into Power BI for easy escalation and action.
-
-For example, when predicted case counts exceed historical norms.
+Our solution includes a custom Agentic AI designed to provide intelligent, conversational interactions with end users. Built with advanced reasoning capabilities, the agent can interpret natural language queries, retrieve relevant data, and assist with decision-making. 
+It connects seamlessly to our data ecosystem, enabling dynamic responses based on real-time insights and curated knowledge sources.
 
 ![Screenshot 2025-04-08 123759](https://github.com/user-attachments/assets/5cb87b21-8dca-46ff-856f-c15082f99bb6)
 
@@ -99,11 +100,6 @@ For example, when predicted case counts exceed historical norms.
 ![Screenshot 2025-04-08 124321](https://github.com/user-attachments/assets/d5b4120f-674f-4a74-bebc-394623049ced)
 
 
-**6. Results**
-Accurate predictions of outbreak hotspots
-Improved visibility into vulnerable regions
-Enabled better resource planning for county health departments
-(Include screenshots of dashboards or sample model output)
 
 **7. User Guide**
 Step-by-Step Guide to Replicating the Microsoft Fabric Solution
@@ -113,68 +109,59 @@ Power BI license (Pro or Premium per user)
 Azure OpenAI resource and access keys
 Required CSV datasets (as provided in the data folder)
 
-## Step 1: Set Up Your Microsoft Fabric Environment
+## Step-by-Step Guide to Replicating the Microsoft Fabric Solution
 
-Go to and log in.
-Create a new Workspace and name it appropriately (e.g., Disease Surveillance).
-Enable the Lakehouse preview feature if not already enabled.
+###  Step 1: Set Up Your Microsoft Fabric Environment
+- Go to [Microsoft Fabric](https://app.fabric.microsoft.com) and log in.
+- Create a new Workspace and name it appropriately (e.g., `Disease Surveillance`).
+- Enable the Lakehouse preview feature if not already enabled.
 
-**Step 2: Create a Lakehouse and Upload Datasets**
-In your workspace, click New > Lakehouse and name it DiseaseSurveillanceLakehouse.
-Open the Lakehouse and click Upload > Files, then upload each dataset CSV.
-Ensure the files are saved in the Tables section to auto-generate structured tables.
+###  Step 2: Create a Lakehouse and Upload Datasets
+- In your workspace, click **New > Lakehouse** and name it `DiseaseSurveillanceLakehouse`.
+- Open the Lakehouse and click **Upload > Files**, then upload each dataset CSV.
+- Ensure the files are saved in the **Tables** section to auto-generate structured tables.
 
-**Step 3: Data Transformation with Notebooks**
-In your Lakehouse, click New notebook.
-Load each table using PySpark or Pandas commands:
-df = spark.read.load("Tables/health\_facility\_reports")
-df.display()
+###  Step 3: Data Transformation with Notebooks
+- In your Lakehouse, click **New notebook**.
+- Load each table using PySpark or Pandas commands:
 
-**Clean and transform the data:**
-Handle missing values
-Normalize field names
-create joined views by County and Date
-Save transformed tables as new Lakehouse tables
+### Step 4: Train and Register AI Model (Optional)
+- If performing modeling in Fabric, use the ML model notebook interface.
+- Alternatively, train and register your Azure ML model separately.
+- Use Azure ML Studio or Python SDK to train outbreak forecasting models and expose them as endpoints.
 
-**Step 4: Train and Register AI Model (Optional)**
+### Step 5: Connect Azure OpenAI and Build Chatbot
+- Set up your Azure OpenAI resource and deploy a GPT model.
+- Use Power BI or a web interface with a backend (Flask, Node.js, etc.) to create a chatbot that queries Fabric tables.
+- Securely store your OpenAI keys and Fabric workspace endpoints
 
-If performing modeling in Fabric, use the ML model notebook interface.
-Alternatively, train and register your Azure ML model separately.
-Use Azure ML Studio or Python SDK to train outbreak forecasting models and expose them as endpoints.
+### Step 6: Create Dashboards in Power BI
+1.	From your Fabric workspace, click New > Power BI Report.
+   - Connect to Lakehouse tables using Direct Lake or Power BI Dataset.
+   - Build visualizations:
+      o	Disease trends
+      o	Regional case distribution
+      o	High-risk population charts
+   - Save and publish dashboards to your workspace.
 
-**Step 5: Connect Azure OpenAI and Build Chatbot**
 
-Set up your Azure OpenAI resource and deploy a GPT model.
-Use Power BI or a web interface with a backend (Flask, Node.js, etc.) to create a chatbot that queries Fabric tables.
-Securely store your OpenAI keys and Fabric workspace endpoints.
+## 8. Challenges Faced
 
-**Step 6: Create Dashboards in Power BI**
-
-From your Fabric workspace, click New > Power BI Report.
-Connect to Lakehouse tables using Direct Lake or Power BI Dataset.
-Build visualizations:
-Disease trends
-Regional case distribution
-High-risk population charts
-Save and publish dashboards to your workspace.
-
-**8. Challenges Faced**
-
-Handling missing/inconsistent data
-Training accurate models with limited real-world labels
-Designing real-time pipelines with Microsoft Fabric
+- Creating Vector Embedding in the EventHouse
+- Training accurate models with limited real-world labels
+- Synthetic data which was inconsistent
 
 **9. Team**
 
-Malvin Owuor – Data & AI Engineer
-Sammy Chesire – Data & ML Engineer
-Edgar Ochieng – Data & AI Engineer
+- Malvin Owuor
+- Sammy Chesire
+- Edgar Ochieng
 
 **10. Future Work**
 
-Integrate live health API feeds (e.g., DHIS2)
-Incorporate mobility and social media signals
-Deploy as a fully managed app for government health portals
+- Integrate live health API feeds (e.g., DHIS2)
+- Incorporate mobility and social media signals
+- Deploy as a fully managed app for government health portals
 
 # 10. License
 MIT Copyright (c) 2025
