@@ -153,7 +153,7 @@ Required CSV datasets (as provided in the data folder)
 
 **9. Team**
 
-- Malvin Owuor
+- Malvine Owuor
 - Sammy Chesire
 - Edgar Ochieng
 
