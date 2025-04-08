@@ -16,7 +16,7 @@ load_dotenv()
 # Retrieve environment variables
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 OPENAI_CHAT_MODEL = os.getenv('OPENAI_CHAT_MODEL', 'gpt-4')
-OPENAI_API_BASE = os.getenv('OPENAI_API_BASE', 'https://armelyopenai.openai.azure.com/')
+OPENAI_API_BASE = os.getenv('OPENAI_API_BASE', 'OPENAI_API_BASE')
 
 openai.api_key = OPENAI_API_KEY
 openai.api_base = OPENAI_API_BASE
